@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Numerical converter</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="main">
+    <h1><strong>This site has been made to help you convert numbers or codes to other number systems.</strong></h1>
+    <form id="form">
+        <div id="divFrom">
+            <label for="from" class="main mainFont">Convert a</label>
+            <select name="from" id="from" class="mainFont">
+                <option value="dec">decimal</option>
+                <option value="bin">binary</option>
+                <option value="hex">hexadecimal</option>
+            </select>
+            <label for="from" class="main mainFont"> number</label>
+            <label for="to" class="main mainFont">to </label>
+            <select name="to" id="to" class="mainFont">
+                <option value="dec">decimal</option>
+                <option value="bin" selected>binary</option>
+                <option value="hex">hexadecimal</option>
+            </select>
+        </div>
+        <div id="divEnter">
+            <label for="number" class="main mainFont">Enter your number: </label>
+            <input type="text" name="number" id="number"  class="mainFont" placeholder="Enter a number here..." autocomplete="off" required autofocus>
+            <input type="submit" value="Convert" class="main mainFont button">
+            <input type="reset" value="Reset" class="main mainFont button">
+            <br>
+        </div>
+    </form>
+    <div id="divResult">
+        <p class="main mainFont">
+        Result: <span id="result" class="mainFont">None</span>
+        </p>
+    </div>
+    <footer>
+        <hr>
+        <a href="mailto:sasetosasha@gmail.com"><img src="https://i.imgur.com/dCfSk4S.png" alt="email" width="42" height="22" title="Click to write me an email"></a>
+        <a href="https://github.com/7splay"><img src="https://i.imgur.com/eISaW5P.png" alt="github" width="22" height="22" title="Click to check my github"></a>
+    </footer>
+    <script src="script.js"></script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+</html>
